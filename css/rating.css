@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f1f2f6;
+  direction: rtl;
+}
+
+/* Header */
+header {
+  background: #2d3436;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #00cec9;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+}
+
+/* Button */
+.add-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Ratings */
+.ratings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Card */
+.card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box */
+.modal-box {
+  background: #1c1c1c;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Close */
+.modal-box span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+/* Inputs */
+.modal-box input,
+.modal-box textarea,
+.modal-box select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Button */
+.modal-box button {
+  width: 100%;
+  padding: 10px;
+  background: #0984e3;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

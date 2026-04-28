@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المتعهدين</title>
+
+<link rel="stylesheet" href="../css/contractors.css">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">متعهد الحفلات</div>
+
+  <nav class="nav">
+    <a href="../home.html">الرئيسية</a>
+    <a href="../pages/contractors.html">المتعهدين</a>
+    <a href="../pages/service.html">الخدمات</a>
+    <a href="../pages/rating.html">التقييمات</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h1>المتعهدين</h1>
+
+  <!-- <div class="actions">
+    <button>➕ إضافة</button>
+    <button>✏️ تعديل</button>
+    <button>🗑️ حذف</button>
+  </div> -->
+
+  <div class="grid">
+
+    <div class="card" onclick="showDetails(this)">
+      <img src="../assets/images/akawah.ye_14040430_001553756.jpg">
+      <h3>أحمد محمد</h3>
+      <p>جدة</p>
+      <span>⭐⭐⭐⭐⭐</span>
+      <button onclick="openRatingModal(event)">تقييم</button>
+    </div>
+
+    <div class="card" onclick="showDetails(this)">
+      <img src="../assets/images/akawah.ye_14040430_001553756.jpg">
+      <h3>سارة علي</h3>
+      <p>الرياض</p>
+      <span>⭐⭐⭐⭐☆</span>
+      <button onclick="openRatingModal(event)">تقييم</button>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- Modal تفاصيل -->
+<div id="vendorModal" class="modal">
+  <div class="modal-box">
+    <span onclick="closeModal()">✖</span>
+
+    <h3 id="mName"></h3>
+    <p id="mLocation"></p>
+    <p id="mPhone"></p>
+    <p id="mEmail"></p>
+    <p id="mServices"></p>
+
+  </div>
+</div>
+
+<!-- Modal تقييم -->
+<div id="ratingModal" class="modal">
+  <div class="modal-box">
+    <span onclick="closeRatingModal()">✖</span>
+
+    <h3>إضافة تقييم</h3>
+
+    <textarea id="ratingText" placeholder="اكتب تقييمك..."></textarea>
+
+    <select id="ratingStars">
+      <option value="1">⭐</option>
+      <option value="2">⭐⭐</option>
+      <option value="3">⭐⭐⭐</option>
+      <option value="4">⭐⭐⭐⭐</option>
+      <option value="5">⭐⭐⭐⭐⭐</option>
+    </select>
+
+    <button onclick="submitRating()">إرسال</button>
+
+  </div>
+</div>
+
+<script src="../js/app.js"></script>
+</body>
+</html>
